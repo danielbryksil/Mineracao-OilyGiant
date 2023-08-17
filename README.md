@@ -29,23 +29,26 @@ Os dados de exploração geológica para as três regiões estão armazenados em
 Os dados são sintéticos e não incluem nenhum detalhe de contratos ou características de poços.
 
 ## Instruções do projeto
-1.	Baixe e prepare os dados. Explique o procedimento.
-2.	Treine e teste o modelo para cada região em geo_data_0.csv:
-1.	Divida os dados em um conjunto de treinamento e um conjunto de validação em uma proporção de 75:25.
-2.	Treine o modelo e faça predições para o conjunto de validação.
-3.	Salve as predições e respostas corretas no conjunto de validação.
-4.	Imprima o volume médio previsto de reservas e o REQM do modelo.
-5.	Analise os resultados.
-6.	Coloque todos os passos anteriores em funções, execute os passos 2.1 a 2.5 nos arquivos 'geo_data_1.csv' e 'geo_data_2.csv'.
+1.	Baixei e preparei os dados. 
+2.	Treinei e testei o modelo para cada região em geo_data_0.csv:
+-	Dividi os dados em um conjunto de treinamento e um conjunto de validação em uma proporção de 75:25.
+-	Treinei o modelo e fiz predições para o conjunto de validação.
+-	Salvei as predições e respostas corretas no conjunto de validação.
+-	Imprimi o volume médio previsto de reservas e o REQM do modelo.
+-	Analisei os resultados.
+-	Coloquei todos os passos anteriores em funções, executei os passos 2.1 a 2.5 nos arquivos 'geo_data_1.csv' e 'geo_data_2.csv'.
+
 3.	Prepare-se para o cálculo de lucro:
-1.	Armazene todos os valores necessários para os cálculos em variáveis separadas.
-2.	Dado o investimento de 100 milhões para 200 poços de petróleo, cada um precisa produzir, em média, uma quantidade de unidades equivalente a pelo menos 500 mil dólares para evitar prejuízos (isso é aproximadamente 111,1 unidades). Compare essa quantidade com o volume médio de cada região.
-3.	Forneça conclusões sobre a etapa de preparação para o cálculo de lucro.
-4.	Escreva uma função para calcular lucro de um conjunto de poços de petróleo selecionados e predições do modelo:
-1.	Escolha os 200 poços com os valores mais altos previstos de cada uma das 3 regiões (ou seja, arquivos 'csv').
-2.	Sumarize o volume alvo de reservas de acordo com essas predições. Armazene as predições para os 200 poços para cada uma das 3 regiões.
-3.	Calcule o lucro potencial dos 200 melhores poços por região. Apresente suas conclusões: sugira uma região para o desenvolvimento de poços de petróleo e justifique sua escolha.
-5.	Calcule riscos e lucro para cada região:
-1.	Usando as predições que você armazenou na etapa 4.2, use a técnica de bootstrapping com 1.000 amostras para encontrar a distribuição de lucros.
-2.	Encontre lucro médio, intervalo de confiança de 95% e o risco de prejuízo. Prejuízo é um lucro negativo, calcule-o como uma probabilidade e depois o expresse como uma porcentagem.
-3.	Apresente suas conclusões: sugira uma região para o desenvolvimento de poços de petróleo e justifique sua escolha. A sua escolha corresponde à escolha anterior na etapa 4.3?
+-	Armazenei todos os valores necessários para os cálculos em variáveis separadas.
+-	Dado o investimento de 100 milhões para 200 poços de petróleo, cada um precisa produzir, em média, uma quantidade de unidades equivalente a pelo menos 500 mil dólares para evitar prejuízos (isso é aproximadamente 111,1 unidades). Comparei essa quantidade com o volume médio de cada região.
+- Forneci conclusões sobre a etapa de preparação para o cálculo de lucro.
+
+4.	Escrevi uma função para calcular lucro de um conjunto de poços de petróleo selecionados e predições do modelo:
+-	Escolhi os 200 poços com os valores mais altos previstos de cada uma das 3 regiões (ou seja, arquivos 'csv').
+-	Sumarizei o volume alvo de reservas de acordo com essas predições. Armazenei as predições para os 200 poços para cada uma das 3 regiões.
+-	Calculei o lucro potencial dos 200 melhores poços por região. Apresentei suas conclusões: sugeri uma região para o desenvolvimento de poços de petróleo e justifiquei sua escolha.
+
+5.	Calculei riscos e lucro para cada região:
+-	Usando as predições que armazenei na etapa 4.2, usei a técnica de bootstrapping com 1.000 amostras para encontrar a distribuição de lucros.
+-	Encontrei lucro médio, intervalo de confiança de 95% e o risco de prejuízo. Prejuízo é um lucro negativo, calculei-o como uma probabilidade e depois o expressei como uma porcentagem.
+
